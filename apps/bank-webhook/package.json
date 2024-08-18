@@ -1,0 +1,17 @@
+{
+  "name": "bank_webhook_handler",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "build": "npx esbuild ./src/index.ts --bundle --platform=node --outfile=dist/index.js",
+    "start": "node dist/index.js",
+    "dev": "yarn run build && yarn run start"
+  },
+  "dependencies": {
+    "@types/express": "^4.17.21",
+    "esbuild": "^0.23.1",
+    "express": "^4.19.2",
+    "@repo/db": "*"
+  }
+}
