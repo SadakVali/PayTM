@@ -18,7 +18,7 @@ app.post("/hdfcWebhook", async (req, res) => {
     userId: req.body?.userId,
     amount: req.body?.amount,
   };
-  // TODO: update balance in db and txn
+  // TODO: Check if the transaction STATUS is processing or not. If processing proceed forward else don't update DB
   try {
     await db.$transaction([
       db.balance.update({

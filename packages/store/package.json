@@ -1,12 +1,12 @@
 {
   "name": "@repo/store",
   "version": "1.0.0",
-  "main": "index.ts",
+  "main": "index.js",
   "license": "MIT",
   "dependencies": {
     "recoil": "^0.7.7"
   },
   "exports": {
-    ".": "./src/index.ts"
+    "./useBalance": "./src/hooks/useBalance.ts"
   }
 }

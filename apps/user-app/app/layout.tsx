@@ -1,3 +1,5 @@
+import "./globals.css";
+
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import { Providers } from "./providers";
@@ -19,7 +21,7 @@ export default function RootLayout({ children }: propTypes): JSX.Element {
     <html lang="en">
       <Providers>
         <body className={`${inter.className}`}>
-          <div className="min-w-screen min-h-screen bf=g-[#ebe6e6]">
+          <div className="min-w-screen min-h-screen bg-[#ebe6e6]">
             <AppbarClient />
             {children}
           </div>

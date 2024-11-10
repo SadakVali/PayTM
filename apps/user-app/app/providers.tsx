@@ -1,13 +1,8 @@
 "use client";
-
 import { RecoilRoot } from "recoil";
 import { SessionProvider } from "next-auth/react";
 
-interface InputProps {
-  children: React.ReactNode;
-}
-
-export const Providers = ({ children }: InputProps) => {
+export const Providers = ({ children }: { children: React.ReactNode }) => {
   return (
     <RecoilRoot>
       <SessionProvider>{children}</SessionProvider>

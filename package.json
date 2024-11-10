@@ -1,5 +1,5 @@
 {
-  "name": "PayTM",
+  "name": "pay-tm",
   "private": true,
   "scripts": {
     "build": "turbo build",

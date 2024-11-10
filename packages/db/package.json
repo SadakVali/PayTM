@@ -8,7 +8,8 @@
     "prisma": "5.18.0"
   },
   "dependencies": {
-    "@prisma/client": "5.18.0"
+    "@prisma/client": "5.18.0",
+    "bcryptjs": "^2.4.3"
   },
   "prisma": {
     "seed": "ts-node prisma/seed.ts"

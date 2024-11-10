@@ -18,7 +18,7 @@ export const SidebarItem = ({ href, title, icon }: propTypes) => {
       onClick={() => {
         router.push(href);
       }}
-      className={`flex ${selected ? "text-[#6a51a6]" : "text-slate-500"} cursor-pointer p-2 pl-8`}
+      className={`flex flex-row ${selected ? "text-[#6a51a6]" : "text-slate-500"} cursor-pointer p-2 pl-8`}
     >
       <div className="pr-2">{icon}</div>
       <div

@@ -1,4 +1,4 @@
-import { Card } from "@repo/ui/card";
+import { Card } from "@repo/ui";
 
 interface propTypes {
   time: Date;
@@ -14,16 +14,17 @@ export const OnRampTransactions = ({
 }) => {
   if (!transactions.length) {
     return (
-      <Card title="Recent Transactions" href="">
+      <Card title="Recent Transactions">
         <div className="text-center pb-8 pt-8">No Recent Transactions</div>
       </Card>
     );
   }
+
   return (
-    <Card title="Recent Transactions" href="">
+    <Card title="Recent Transactions">
       <div className="pt-2">
-        {transactions.map((transaction) => (
-          <div className="flex justify-between">
+        {transactions.map((transaction, id) => (
+          <div className="flex justify-between" key={id}>
             <div>
               <div className="text-sm">Recieved INR</div>
               <div className="text-xs text-slate-600">

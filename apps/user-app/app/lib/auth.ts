@@ -1,4 +1,4 @@
-import bcrypt from "bcrypt";
+import bcrypt from "bcryptjs";
 import db from "@repo/db/client";
 import CredentialsProvider from "next-auth/providers/credentials";
 
